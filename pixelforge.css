@@ -2,22 +2,17 @@
  * @name PixelForge
  * @version 1.0.0
  * @description Kırmızı-siyah temalı BetterDiscord teması.
- * @author [PenguinBeyy]
- * @source [https://github.com/PenguinBeyy/pixelforge_discordbetter_theme/tree/main
+ * @author [Your Name]
+ * @source [Link to GitHub Repository or any other source]
  */
 
-@import url('https://github.com/PenguinBeyy/pixelforge_discordbetter_theme/blob/main/PixelForge.theme.css);
+@import url('https://dagcord.github.io/Wildberry/wildberry.css');
 
 /* Kırmızı-Siyah Tema */
 
 /* Ana arka plan */
 .app-2rEoOp, .theme-dark {
     background-color: #000000 !important;
-}
-
-/* Ana yazı rengi */
-.theme-dark .markup-2BOw-j, .theme-dark .markup-2BOw-j * {
-    color: #FF0000 !important;
 }
 
 /* Arka plan rengi */
@@ -41,10 +36,21 @@
     font-size: 12px;
 }
 
-/* Kullanıcı adlarında */
-.theme-dark .username-1A8OIy::before {
-    content: "PixelForge";
-    color: #FF0000;
-    font-weight: bold;
-    font-size: 12px;
+/* Kullanıcı adlarında cihaz temasına göre renk ayarı */
+.theme-light .username-1A8OIy {
+    color: #0000FF !important; /* Mavi */
+}
+
+.theme-dark .username-1A8OIy {
+    color: #FF0000 !important; /* Kırmızı */
+}
+
+/* Karşı tarafın yazı rengi */
+.theme-dark .message-2qnXI6 .markup-2BOw-j:not(.user-msg-your-username) {
+    color: #FF0000 !important;
+}
+
+/* Sizin yazılarınızın rengi */
+.theme-dark .message-2qnXI6 .markup-2BOw-j.user-msg-your-username {
+    color: #00008B !important; /* Koyu Mavi */
 }
