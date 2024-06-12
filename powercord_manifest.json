@@ -1,0 +1,8 @@
+{
+    "name": "PixelForge",
+    "description": "Kırmızı-siyah temalı BetterDiscord teması.",
+    "version": "1.0.0",
+    "author": "[PenguinBeyy",
+    "license": "MIT",
+    "theme": ".pixelforge.css"
+}
